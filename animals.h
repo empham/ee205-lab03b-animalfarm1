@@ -19,8 +19,7 @@
 #define MAX_SPECIES (20)
 
 /// Gender is appropriate for all animals in this database
-// enum Gender // @todo fill this out from here...
-
+   enum Gender{ MALE, FEMALE };
 
 /// Return a string for the name of the color
 /// @todo this is for you to implement

@@ -8,9 +8,9 @@
 ///
 /// This controls the overall flow of this program.
 ///
-/// @author @todo yourName <@todo yourMail@hawaii.edu>
+/// @author EmilyPham <emilyn3@hawaii.edu>
 /// @brief  Lab 03b - AnimalFarm1 - EE 205 - Spr 2021
-/// @date   @todo dd_mmm_yyyy
+///  @date   01_28_2021
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <stdio.h>

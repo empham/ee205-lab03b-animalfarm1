@@ -6,17 +6,33 @@
 # @file Makefile
 # @version 1.0
 #
-# @author @todo yourName <@todo yourMail@hawaii.edu>
+# @author EmilyPham <emilyn3@hawaii.edu>
 # @brief  Lab 03b - AnimalFarm1 - EE 205 - Spr 2021
-# @date   @todo dd_mmm_yyyy
+# @date   01_28_2021
 ###############################################################################
 
-all: animalfarm
+#	$(info You need to write your own Makefile)
+#	$(info I know you can do it)
+#	$(info for now type gcc -o animalfarm *.c)
+TARGET = animalfarm
+CC = gcc
+SRC = main.c cat.c animals.c
+OBJ = main.o cat.o animals.o
+HDR = cat.h animals.h
 
-animalfarm:
-	$(info You need to write your own Makefile)
-	$(info I know you can do it)
-	$(info for now type gcc -o animalfarm *.c)
+all: $(TARGET)
+
+animalfarm: $(OBJ)
+	$(CC) -o animalfarm $(OBJ)
+
+main.o: main.c cat.h
+	$(CC) -c main.c
+
+cat.o: cat.c cat.h
+	$(CC) -c cat.c
+
+animals.o: animals.c animals.h
+	$(CC) -c animal.c
 
 clean:
 	rm -f *.o animalfarm

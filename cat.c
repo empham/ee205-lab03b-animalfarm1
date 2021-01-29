@@ -8,9 +8,9 @@
 ///
 /// Implements a simple database that manages cats
 ///
-/// @author @todo yourName <@todo yourMail@hawaii.edu>
+/// @author EmilyPham <emilyn3@hawaii.edu>
 /// @brief  Lab 03b - AnimalFarm1 - EE 205 - Spr 2021
-/// @date   @todo dd_mmm_yyyy
+///  @date   01_28_2021
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <string.h>
@@ -20,7 +20,7 @@
 #include "cat.h"
 
 // @todo declare an array of struct Cat, call it catDB and it should have at least MAX_SPECIES records in it
-
+   struct Cat catDB[MAX_SPECIES];
 
 /// Add Alice to the Cat catabase at position i.
 /// 
@@ -28,6 +28,13 @@
 ///
 /// @note This terrible style... we'd never hardcode this data, but it gets us started.
 void addAliceTheCat(int i) {
+   //catDB[i].name[0] = "Alice" ;
+   catDB[i].gender = FEMALE;
+   catDB[i].breed = MAIN_COON;
+   catDB[i].isFixed = true;
+   catDB[i].weight = 12.34;
+   catDB[i].collar1_color = BLACK;
+   catDB[i].collar2_color = RED;
 }
 
 
