@@ -32,7 +32,7 @@ cat.o: cat.c cat.h
 	$(CC) -c cat.c
 
 animals.o: animals.c animals.h
-	$(CC) -c animal.c
+	$(CC) -c animals.c
 
 clean:
 	rm -f *.o animalfarm
