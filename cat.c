@@ -45,15 +45,22 @@ void addAliceTheCat(int i) {
 /// @param int i Which cat in the database that should be printed
 ///
 void printCat(int i) {
-   // Here's a clue of what one printf() might look like...
+   // a temp string used to convert bool value to string form
+   // @note I know might not be best way but I don't wanna make new function
+   char tempString[4];
+   //Here's a clue of what one printf() might look like...
    printf ("Cat name = [%s]\n", catDB[i].name );
    printf ("    gender = [%s]\n", genderName( catDB[i].gender ));
    printf ("    breed = [%s]\n", catBreedName( catDB[i].breed ));
-   printf ("    isFixed = [%s]\n", colorName( catDB[i].collar1_color ));
-   printf ("    weight = [%f]\n", colorName( catDB[i].collar1_color ));
+
+   if ( catDB[i].isFixed == true ) { strcpy(tempString, "Yes");
+   } else strcpy( tempString, "No" );
+
+   printf ("    isFixed = [%s]\n", tempString);
+   printf ("    weight = [%.2f]\n", catDB[i].weight );
    printf ("    collar color 1 = [%s]\n", colorName( catDB[i].collar1_color ));
    printf ("    collar color 2 = [%s]\n", colorName( catDB[i].collar2_color ));
-   printf ("    license = [%l]\n", colorName( catDB[i].collar1_color ));
+   printf ("    license = [%ld]\n", catDB[i].license );
 }
 
 /// Decode the enum CatBreeds into strings for printf()
