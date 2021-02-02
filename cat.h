@@ -26,7 +26,7 @@
       char name[NAME_LENGTH_MAX];
       enum Gender gender;
       enum CatBreeds breed;
-      bool isFixed;
+      _Bool isFixed;
       float weight;
       enum Color collar1_color;
       enum Color collar2_color;

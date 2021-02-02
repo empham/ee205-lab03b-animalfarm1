@@ -28,7 +28,7 @@
 ///
 /// @note This terrible style... we'd never hardcode this data, but it gets us started.
 void addAliceTheCat(int i) {
-   //catDB[i].name[0] = "Alice" ;
+   stpcpy(catDB[i].name, "Alice");
    catDB[i].gender = FEMALE;
    catDB[i].breed = MAIN_COON;
    catDB[i].isFixed = true;
