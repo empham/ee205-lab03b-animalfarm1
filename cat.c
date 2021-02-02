@@ -35,6 +35,7 @@ void addAliceTheCat(int i) {
    catDB[i].weight = 12.34;
    catDB[i].collar1_color = BLACK;
    catDB[i].collar2_color = RED;
+   catDB[i].license = 12345;
 }
 
 
@@ -45,6 +46,36 @@ void addAliceTheCat(int i) {
 ///
 void printCat(int i) {
    // Here's a clue of what one printf() might look like...
-   // printf ("    collar color 1 = [%s]\n", colorName( catDB[i].collar1_color ));
+   printf ("Cat name = [%s]\n", catDB[i].name );
+   printf ("    gender = [%s]\n", genderName( catDB[i].gender ));
+   printf ("    breed = [%s]\n", catBreedName( catDB[i].breed ));
+   printf ("    isFixed = [%s]\n", colorName( catDB[i].collar1_color ));
+   printf ("    weight = [%f]\n", colorName( catDB[i].collar1_color ));
+   printf ("    collar color 1 = [%s]\n", colorName( catDB[i].collar1_color ));
+   printf ("    collar color 2 = [%s]\n", colorName( catDB[i].collar2_color ));
+   printf ("    license = [%l]\n", colorName( catDB[i].collar1_color ));
 }
+
+/// Decode the enum CatBreeds into strings for printf()
+/// 
+/// @param enum CatBreeds what the gender of an animal is
+///
+/// Return a string for the name of a breed of cat
+char* catBreedName (enum CatBreeds breed) { 
+   switch (breed){
+      case MAIN_COON:
+         return "Main Coon";
+      case MANX:
+         return "Manx";
+      case SHORTHAIR:
+         return "Shorthair";
+      case PERSIAN:
+         return "Persian";
+      case SPHYNX:
+         return "Sphynx";
+      default: return NULL;
+   }
+
+   return NULL; // We should never get here
+};
 

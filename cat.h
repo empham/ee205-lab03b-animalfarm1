@@ -48,3 +48,5 @@ void addAliceTheCat(int i);
 ///
 void printCat(int i) ;
 
+/// Return a string for the name of a breed of cat
+   char* catBreedName (enum CatBreeds breed); 

@@ -41,4 +41,19 @@ char* colorName (enum Color color) {
    return NULL; // We should never get here
 };
 
+/// Decode the enum Gender into strings for printf()
+/// 
+/// @param enum Gender what the gender of an animal is
+char* genderName (enum Gender gender) {
+   // @todo Map the enum Color to a string
+   switch (gender){
+      case FEMALE:
+         return "Female";
+      case MALE:
+         return "Male";
+      default: return NULL;
+   }
+
+   return NULL; // We should never get here
+};
 

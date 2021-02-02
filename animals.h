@@ -27,3 +27,6 @@
 /// Return a string for the name of the color
 /// @todo this is for you to implement
    char* colorName (enum Color color);
+
+/// Return a string for the name of a gender
+   char* genderName (enum Gender gender); 
