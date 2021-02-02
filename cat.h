@@ -19,7 +19,6 @@
 #include "animals.h"
 
    enum CatBreeds{ MAIN_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX };
-   enum Color{ BLACK, WHITE, RED, BLUE, GREEN, PINK};
 
 /// @todo declare a struct Cat here
    struct Cat{

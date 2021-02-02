@@ -21,6 +21,9 @@
 /// Gender is appropriate for all animals in this database
    enum Gender{ MALE, FEMALE };
 
+/// Color is used for multiple animals
+   enum Color{ BLACK, WHITE, RED, BLUE, GREEN, PINK };
+
 /// Return a string for the name of the color
 /// @todo this is for you to implement
-// char* colorName (enum Color color);
+   char* colorName (enum Color color);

@@ -14,15 +14,31 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "animals.h"
+#include "cat.h"
 
 /// Decode the enum Color into strings for printf()
-// char* colorName (enum Color color) {
-
+char* colorName (enum Color color) {
    // @todo Map the enum Color to a string
+   switch (color){
+      case BLACK:
+         return "Black";
+      case WHITE:
+         return "White";
+      case RED:
+         return "Red";
+      case BLUE:
+         return "Blue";
+      case GREEN:
+         return "Green";
+      case PINK:
+         return "Pink";
+      default: return NULL;
+   }
 
-//   return NULL; // We should never get here
-// };
+   return NULL; // We should never get here
+};
 
 
